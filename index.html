@@ -62,10 +62,16 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/input.css" />
     <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
     <!-- title-->
     <title>جاسمين عدلي - افضل معلمة خصوصي في السعودية</title>
     <!-- canonical URL -->
     <link rel="canonical" href="https://jasminadly.online/" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body class="w-full overflow-x-hidden">
@@ -251,7 +257,7 @@
       <!-- [ -->
       <!-- ] -->
       <!-- start teach for section -->
-      <section class="teach-for-secrion">
+      <section class="teach-for-section">
         <div class="container mx-auto px-4 py-20">
           <div
             class="parent flex items-center flex-col-reverse flex-wrap lg:flex-row"
@@ -299,6 +305,52 @@
         </div>
       </section>
       <!-- end teach for section -->
+      <!-- ] -->
+      <!-- [ -->
+      <!-- ] -->
+      <!-- start opinios section -->
+      <section class="opinions-section">
+        <div class="container mx-auto px-4 py-20">
+          <div class="flex items-start flex-wrap">
+            <div
+              class="child opinions-title w-full text-center mb-20 lg:mb-0 lg:text-start lg:w-6/12"
+            >
+              <h1 class="text-4xl text-purplecolor font-bold">أراء العملاء</h1>
+            </div>
+            <div class="child opinions-swiper-cards w-full lg:w-6/12">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper opinion-swiper"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end opinios section -->
+      <!-- ] -->
+      <!-- [ -->
+      <!-- ] -->
+      <!-- start certificates section -->
+      <section class="certificates-section">
+        <div class="container mx-auto px-4 py-20">
+          <div class="flex items-start flex-wrap">
+            <div
+              class="child certificate-title w-full text-center mb-20 lg:mb-0 lg:text-start lg:w-6/12"
+            >
+              <h1 class="text-4xl text-purplecolor font-bold">شهاداتي</h1>
+            </div>
+            <div class="child certificate w-full lg:w-6/12">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper certificate-swiper"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end certificates section -->
       <!-- ] -->
       <!-- [ -->
       <!-- ] -->
@@ -470,7 +522,7 @@
             <div class="copy-right text-slate-700 text-center">
               Copyright © 2024 أفضل معلمة خصوصي في السعودية | Powered By
               <a
-                href="https://yousef-ahmed.vercel.app/"
+                href="https://www.yousef-ahmed.website/"
                 target="_blank"
                 class="underline text-purplecolor hover:text-slate-700"
                 >Yousef Ahmed</a
@@ -481,5 +533,19 @@
       </footer>
       <!-- end footer -->
     </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- sanity -->
+    <script src="js/sanity.js" type="module"></script>
   </body>
 </html>
